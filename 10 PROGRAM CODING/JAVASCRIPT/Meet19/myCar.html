@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Car</title>
+</head>
+<body>
+    
+<script>
+
+    let car_1 = {
+        name : "Mercedes-Benz",
+        age : 4,
+        owner : "Prof. Dr. Felix Hainsly Martin S.Kom., M.Kom",
+
+        say : function (){
+            console.log("Brumm ...brumm!")
+        }
+    };
+
+    let car_2 = {
+        name : "Lamborghini",
+        age : 2,
+        owner : "Prof. Dr. Felix Hainsly Martin S.Kom., M.Kom",
+
+        say : function (){
+            console.log("Broom ...brommm!")
+        }
+    };
+
+    let car_3 = {
+        name : "Bugatti",
+        age : 1,
+        owner : "Prof. Dr. Felix Hainsly Martin S.Kom., M.Kom",
+
+        say : () => {
+            console.log ("Broomm ...brooommm!")
+        }
+    };
+
+    console.log(`My Car 1 name is ${car_1.name}`);
+    console.log(`My Car 1 age is ${car_1['age']}`);
+    console.log(`My Car 1 owner is ${car_1['owner']}`);
+    console.log(`My Car 2 name is ${car_2.name}`);
+    console.log(`My Car 2 age is ${car_2['age']}`);
+    console.log(`My Car 2 owner is ${car_2['owner']}`);
+    console.log(`My Car 3 name is ${car_3.name}`);
+    console.log(`My Car 3 age is ${car_3['age']}`);
+    console.log(`My Car 3 owner is ${car_2['owner']}`);
+    car_1.say();
+    car_2.say();
+    car_3.say();
+</script>
+</html>

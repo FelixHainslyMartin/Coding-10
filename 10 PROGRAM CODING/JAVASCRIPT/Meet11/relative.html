@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
+
+        .red {
+            /* position: relative; */
+            background-color: red;
+            /* margin-top: 100px; */
+            /* top: 100px; */
+        }
+
+        .yellow {
+            position: relative;
+            background-color: yellow;
+            top: 100px;
+            left: 100px;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red"></div>
+    <div class="box yellow"></div>
+    <div class="box green"></div>
+</body>
+</html>

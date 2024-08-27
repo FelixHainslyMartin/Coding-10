@@ -1,0 +1,2 @@
+nama = "felix"
+kelas = "x"

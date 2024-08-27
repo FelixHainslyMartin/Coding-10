@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        .container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: yellowgreen;
+            margin: 0px auto;
+            border-radius: 40px;
+        }
+
+        .circle {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            background-color: darkblue;
+            top: 0px;
+            left: 0px;
+            animation-name: oneAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+        }
+
+        @keyframes simpleAnimation {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: calc(100% - 80px);
+            }
+        }
+
+        @keyframes oneAnimation {
+            0% {
+                top: 0px;
+                left: 0px;
+                background-color: aliceblue;
+                scale: 100%;
+            }
+
+            25% {
+                top: 0px;
+                left: calc(100% - 80px);
+                background-color: lightblue;
+                scale: 175%;
+            }
+
+            50% {
+                top: calc(100% - 80px);
+                left: calc(100% - 80px);
+                background-color: deepskyblue;
+                scale: 225%;
+            }
+
+            75% {
+                top: calc(100% - 80px);
+                left: 0px;
+                background-color: blue;
+                scale: 175%;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+                background-color: darkblue;
+                scale: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

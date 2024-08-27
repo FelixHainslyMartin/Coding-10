@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>I'm Off Next Month!</h1>
+    <button id="No">No, I can't</button>
+    <button id="Yes">Yes, I can</button>
+    
+</body>
+<script>
+    let myTimeOut = setTimeout(() => {
+        document.querySelector('h1').innerHTML = "Do you want to go on holiday with me?";
+    }, 5000);
+
+    document.getElementById("No")/addEventListener('click', ()=>{
+        clearTimeout();
+        document.querySelector('h1').innerHTML = "Because I have some affairs that I should do for 2 weeks";
+        document.querySelector('button-No').style.display = "none";
+    })
+
+    document.getElementById("Yes")/addEventListener('click', ()=>{
+        clearTimeout();
+        document.querySelector('h1').innerHTML = "Yes, of course I can go with you";
+        document.querySelector('button-Yes').style.display = "none";
+    })
+</script>
+</html>

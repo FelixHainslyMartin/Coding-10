@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 150px;
+            font-size: 200pt;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+</body>
+<script>
+
+    let date = new Date();
+
+    if (date.getDate() === 1 && date.getMonth === 0){
+        console.log("YES");
+        document.querySelector("h1").innerHTML = "YES"}
+    else{
+        console.log("NO")
+        document.querySelector("h1").innerHTML = "NO"}
+
+</script>
+</html>

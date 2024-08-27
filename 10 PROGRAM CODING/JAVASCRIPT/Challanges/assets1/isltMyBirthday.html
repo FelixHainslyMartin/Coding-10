@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsItMyBirthday</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 125px;
+            font-size: 60pt;
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 125px;
+            font-size: 60pt;
+            font-family:Arial, Helvetica, sans-serif;
+            color: red;
+        }   
+
+        body {
+            background-color: yellowgreen;
+            background: grey url("istockphoto-521495284-612x612.jpg") no-repeat center center / cover;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Is It My Birthday?</h1>
+    <h2></h2>
+</body>
+<script>
+
+    let date = new Date();
+
+    if (date.getDate() === 12 && date.getMonth === 2){
+        console.log("YES");
+        document.querySelector("h2").innerHTML = "YES"}
+    else{
+        console.log("NO")
+        document.querySelector("h2").innerHTML = "NO"}
+
+</script>
+</html>
